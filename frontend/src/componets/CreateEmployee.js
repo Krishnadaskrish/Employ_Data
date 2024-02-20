@@ -66,13 +66,13 @@ export default function CreateEmployee() {
       
       if (response.status === 200) {
         
-        toast.success("Product added successfully!");
+        toast.success(" added Employee successfully!");
         navigate("/adminhome");
       } else {
-        toast.error("Failed to add product.");
+        toast.error("Failed to add .");
       }
     } catch (error) {
-      console.error("Error uploading product:", error);
+      console.error("Error uploading :", error);
     }
 
 
@@ -85,7 +85,7 @@ export default function CreateEmployee() {
       <div className="container mt-5">
         <div className="row">
           <div className="col-md-6">
-            <h2 className="text-center">Add Product</h2>
+            <h2 className="text-center">Add Employee</h2>
             <form onSubmit={handleSubmit} encType="multipart/form-data">
               <label htmlFor="name" className="form-label">
                 Name
